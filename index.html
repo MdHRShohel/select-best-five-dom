@@ -138,75 +138,86 @@
                   <h3 class="text-info pt-2">Selected - V</h3>
                   <img src="images/Ureg.png" width="160px" alt="" />
                   <ol class="text-muted text-start">
-                    <li>Lionel Messi</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                   </ol>
                 </div>
               </section>
 
-              <section class="mt-2 bg-black p-3 text-muted">
-                  <h3 class="text-info pt-2">Budget</h3>
-                  <img src="images/Ureg.png" width="100px" alt="" />
+              <section class="mt-4 bg-black p-3 text-muted">
+                <h3 class="text-info pt-2">Budget</h3>
+                <img src="images/Ureg.png" width="100px" alt="" />
 
- <!-- Per Player budget start -->
- <div class="mt-4 text-start row">
-   <div class="col-4">
-    <label for="calculate">Per Player</label>
-   </div>
-   <div class="col-5">
-    <input
-    id="calculate-field"
-    class="bg-dark border border-light text-white w-100"
-    type="number"
-    name="calculate"
-    min="1"
-  />
-   </div>
-  </div>
-  <button id="calculate-btn" class="px-5 m-3 btn btn-primary">
-    Calculate
-  </button>
-  <p>
-    Player Expenses:
-    <span class="text-white">$<span id="player-expenses-field">0000</span> </span>
-  </p>
-    <!-- Per Player budget end -->
-        <!-- Total budget calculation start -->
-        <div class="mt-3 text-start row">
-           <div class="col-3">
-             <label for="manager">Manager</label>
-            </div>
-             <div class="col-6">
-                <input
-                id="manager-field"
-                class="bg-dark border border-light text-white w-100"
-                type="number"
-                min="1"
-              />
-             </div>
-          </div>
-          <div class="mt-3 text-start row">
-            <div class="col-3">
-                <label for="coach">Coach</label>
-              </div>
-              <div class="col-6">
-                <input
-                id="coach-field"
-                class="bg-dark border border-light text-white w-100"
-                type="number"
-                min="1"
-              />
-              </div>
-          </div>
-        
-          <button id="calculate-total-btn" class="px-5 m-3 btn btn-primary">
-            Calculate Total
-          </button>
-          <p>
-            Total
-            <span class="text-danger">$<span id="player-expenses-field">0000</span> </span>
-          </p>
-        <!-- Total budget calculation start -->
+                <!-- Per Player budget start -->
+                <div class="mt-4 text-start row">
+                  <div class="col-4">
+                    <label for="calculate">Per Player</label>
+                  </div>
+                  <div class="col-5">
+                    <input
+                      id="calculate-field"
+                      class="bg-dark border border-light text-white w-100"
+                      type="number"
+                      name="calculate"
+                      min="1"
+                    />
+                  </div>
+                </div>
+                <button id="calculate-btn" class="px-5 p-1 m-3 btn btn-primary">
+                  Calculate
+                </button>
+                <p class="text-start">
+                  Player Expenses:
+                  <span class="text-white"
+                    >$<span id="player-expenses-field">0000</span>
+                  </span>
+                </p>
+                <!-- Per Player budget end -->
 
+                <!-- Total budget calculation start -->
+                <div class="mt-4 text-start row">
+                  <div class="col-3">
+                    <label for="manager">Manager</label>
+                  </div>
+                  <div class="col-6">
+                    <input
+                      id="manager-field"
+                      class="bg-dark border border-light text-white w-100"
+                      type="number"
+                      min="1"
+                    />
+                  </div>
+                </div>
+                <div class="mt-3 text-start row">
+                  <div class="col-3">
+                    <label for="coach">Coach</label>
+                  </div>
+                  <div class="col-6">
+                    <input
+                      id="coach-field"
+                      class="bg-dark border border-light text-white w-100"
+                      type="number"
+                      min="1"
+                    />
+                  </div>
+                </div>
+
+                <button
+                  id="calculate-total-btn"
+                  class="px-4 m-3 btn btn-primary"
+                >
+                  Calculate Total
+                </button>
+                <p>
+                  Total
+                  <span class="text-danger"
+                    >$<span id="player-expenses-field">0000</span>
+                  </span>
+                </p>
+                <!-- Total budget calculation start -->
               </section>
             </div>
             <!-- Calculation Budget End  -->
@@ -233,19 +244,3 @@
     <!-- MY JS SCRIPTS -->
   </body>
 </html>
-
-<!-- <div class="card bg-black text-white" style="width: 18rem;">
-    <img src="images/messi.png" class="card-img-top" alt="">
-    <div class="card-body text-center">
-      <h4 class="card-title">Lionel Messi</h4>
-      <p class="text-secondary">
-        36 Goals &nbsp; - &nbsp; 120 Assist
-      </p>
-      <a href="#" class="btn btn-primary">Select</a>
-    </div>
-  </div> -->
-
-
-
-
-
