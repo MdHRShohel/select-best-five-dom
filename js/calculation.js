@@ -17,7 +17,7 @@ function getInputFieldValueById(elementId) {
   //set innertext element
   function setTextaValueById(elementId, value) {
     const textElement = document.getElementById(elementId);
-    textElement.innerText = value;
+    textElement.innerText = value.toFixed(2);
   }
 
 
