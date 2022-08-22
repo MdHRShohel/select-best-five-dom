@@ -11,13 +11,14 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body class="bg-dark">
     <header>
       <div class="container text-center">
-        <div class="p-5 bg-black text-bg-primary">
+        <div class="banner bg-black text-bg-primary h-50">
           <h1 class="text-warning pt-5">Choose Your Top Five Players</h1>
-          <p class="mx-5">
+          <p class="banner-text">
             Lets Choose your best players for the next tournament and add your
             budget for the players,Manager and coach. This website will help you
             to calculate total cost for the tournament.
@@ -41,7 +42,12 @@
                       <p class="text-secondary">
                         36 Goals &nbsp; - &nbsp; 120 Assist
                       </p>
-                      <a href="#" class="btn btn-primary">Select</a>
+                      <button
+                        class="btn btn-primary w-75"
+                        onclick=" selectPlayer(this)"
+                      >
+                        Select
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -58,7 +64,12 @@
                       <p class="text-secondary">
                         36 Goals &nbsp; - &nbsp; 120 Assist
                       </p>
-                      <a href="#" class="btn btn-primary">Select</a>
+                      <button
+                        class="btn btn-primary w-75"
+                        onclick=" selectPlayer(this)"
+                      >
+                        Select
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -71,7 +82,12 @@
                       <p class="text-secondary">
                         36 Goals &nbsp; - &nbsp; 120 Assist
                       </p>
-                      <a href="#" class="btn btn-primary">Select</a>
+                      <button
+                        class="btn btn-primary w-75"
+                        onclick=" selectPlayer(this)"
+                      >
+                        Select
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -88,7 +104,12 @@
                       <p class="text-secondary">
                         36 Goals &nbsp; - &nbsp; 120 Assist
                       </p>
-                      <a href="#" class="btn btn-primary">Select</a>
+                      <button
+                        class="btn btn-primary w-75"
+                        onclick=" selectPlayer(this)"
+                      >
+                        Select
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -105,7 +126,12 @@
                       <p class="text-secondary">
                         36 Goals &nbsp; - &nbsp; 120 Assist
                       </p>
-                      <a href="#" class="btn btn-primary">Select</a>
+                      <button
+                        class="btn btn-primary w-75"
+                        onclick=" selectPlayer(this)"
+                      >
+                        Select
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -122,7 +148,12 @@
                       <p class="text-secondary">
                         33 Goals &nbsp; - &nbsp; 110 Assist
                       </p>
-                      <a href="#" class="btn btn-primary">Select</a>
+                      <button
+                        class="btn btn-primary w-75"
+                        onclick=" selectPlayer(this)"
+                      >
+                        Select
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -137,13 +168,13 @@
                 <div class="text-light">
                   <h3 class="text-info pt-2">Selected - V</h3>
                   <img src="images/Ureg.png" width="160px" alt="" />
-                  <ol class="text-muted text-start">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ol>
+                  <br />
+                  <br />
+                  <!-- table for the selectPlayers start -->
+                  <table class="table table-borderless text-white">
+                    <tbody id="v-Selected"></tbody>
+                  </table>
+                  <!-- table for the selectPlayers end -->
                 </div>
               </section>
 
@@ -214,7 +245,7 @@
                 <p>
                   Total
                   <span class="text-danger"
-                    >$<span id="player-expenses-field">0000</span>
+                    >$<span id="total-expenses-field">0000</span>
                   </span>
                 </p>
                 <!-- Total budget calculation start -->
@@ -242,5 +273,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- MY JS SCRIPTS -->
+    <script src="js/selected-v.js"></script>
+    <script src="js/calculation.js"></script>
   </body>
 </html>
